@@ -32,8 +32,6 @@ int* solution(const char* id_list[], size_t id_list_len, const char* report[], s
         a = compare_index(chart, id_list, id_list_len);
         b = compare_index(report_chart, id_list, id_list_len);
 
-        if (a==b)
-            continue;
         if (reporting[a][b] == 0)
         {
             reporting[a][b] = 1;
