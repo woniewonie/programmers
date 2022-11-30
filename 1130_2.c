@@ -14,14 +14,9 @@ int solution(int** sizes, size_t sizes_rows, size_t sizes_cols) {
     {
         if (sizes[i][0] < sizes[i][1])
             SWAP(sizes[i][0], sizes[i][1]);
-    }
-    for (int i=0; i<sizes_rows; i++)
-    {
         if (width < sizes[i][0]) width = sizes[i][0];
         if (height < sizes[i][1]) height = sizes[i][1];
     }
-
     answer = width * height;
-
     return answer;
 }
